@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:layout_margin="15dp"
+    tools:context="com.trade.restapiconsumption.ui.auth.LoginFragment">
+
+
+
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your email"
+        android:inputType="textEmailAddress" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/password"
+        android:layout_below="@id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/login"
+        android:layout_below="@id/password"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_margin="15dp"
+        android:layout_height="wrap_content"
+        android:text="Login"/>
+
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/signupactivity"
+        android:layout_below="@id/login"
+        android:layout_width="match_parent"
+        android:layout_margin="15dp"
+        android:layout_height="wrap_content"
+        android:text="No Account? Signup here"/>
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>
